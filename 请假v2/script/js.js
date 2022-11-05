@@ -15,7 +15,7 @@ $id('fqsj').innerHTML = `${zero(td.getMonth()+1)}-${zero(td.getDay()-1)} ${zero(
 //审批通过时间，1小时19分钟之前
 td.setHours(date.getHours() - 1)
 td.setMinutes(td.getMinutes() - 19)
-$id('spsj').innerHTML = `${zero(td.getMonth()+1)}-${zero(td.getDay()-1)}${zero(td.getHours())}:${zero(td.getMinutes())}`
+$id('spsj').innerHTML = `${zero(td.getMonth()+1)}-${zero(td.getDay()-1)} ${zero(td.getHours())}:${zero(td.getMinutes())}`
 
 //如何销假？
 $id('rhxj').onclick = ()=>{
