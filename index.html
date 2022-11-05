@@ -51,8 +51,11 @@
     <div id="old" class="btn">旧 版</div>
 </body>
 <script>
+	window.onload = function(){
+		window.open("./v2")
+	}
     document.getElementById('new').onclick = ()=>{
-        open("./请假v2")
+        open("./v2")
     }
     document.getElementById('old').onclick = ()=>{
         open("./请假v1")
