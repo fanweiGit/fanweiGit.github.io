@@ -5,7 +5,7 @@ let tds = new Date()
 tds.setMinutes(date.getMinutes() - 30)
 $id('kssj2').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDate())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 //结束时间，当前时间后2个小时
-tds.setHours(date.getHours() + 1)
+tds.setHours(date.getHours() + 2)
 $id('jssj2').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDate())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 
 //发起申请的时间,2小时38分钟之前
