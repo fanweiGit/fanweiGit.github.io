@@ -1,21 +1,21 @@
 //获取当前时间
 let date = new Date()   
-let td = new Date()
+let tds = new Date()
 //开始时间，当前时间前30min
-td.setMinutes(date.getMinutes() - 30)
-$id('kssj2').innerHTML = `${zero(td.getMonth()+1)}-${zero(td.getDay())} ${zero(td.getHours())}:${zero(td.getMinutes())}`
+tds.setMinutes(date.getMinutes() - 30)
+$id('kssj2').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDay())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 //结束时间，当前时间后2个小时
-td.setHours(date.getHours() + 1)
-$id('jssj2').innerHTML = `${zero(td.getMonth()+1)}-${zero(td.getDay())} ${zero(td.getHours())}:${zero(td.getMinutes())}`
+tds.setHours(date.getHours() + 1)
+$id('jssj2').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDay())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 
 //发起申请的时间,2小时38分钟之前
-td.setHours(date.getHours() - 2)
-td.setMinutes(td.getMinutes() - 38)
-$id('fqsj').innerHTML = `${zero(td.getMonth()+1)}-${zero(td.getDay())} ${zero(td.getHours())}:${zero(td.getMinutes())}`
+tds.setHours(date.getHours() - 2)
+tds.setMinutes(tds.getMinutes() - 38)
+$id('fqsj').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDay())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 //审批通过时间，1小时19分钟之前
-td.setHours(date.getHours() - 1)
-td.setMinutes(td.getMinutes() - 19)
-$id('spsj').innerHTML = `${zero(td.getMonth()+1)}-${zero(td.getDay())} ${zero(td.getHours())}:${zero(td.getMinutes())}`
+tds.setHours(date.getHours() - 1)
+tds.setMinutes(tds.getMinutes() - 19)
+$id('spsj').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDay())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 
 //如何销假？
 $id('rhxj').onclick = ()=>{
