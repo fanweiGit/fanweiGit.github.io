@@ -3,19 +3,19 @@ let date = new Date()
 let tds = new Date()
 //开始时间，当前时间前30min
 tds.setMinutes(date.getMinutes() - 30)
-$id('kssj2').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDay())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
+$id('kssj2').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDate())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 //结束时间，当前时间后2个小时
 tds.setHours(date.getHours() + 1)
-$id('jssj2').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDay())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
+$id('jssj2').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDate())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 
 //发起申请的时间,2小时38分钟之前
 tds.setHours(date.getHours() - 2)
 tds.setMinutes(tds.getMinutes() - 38)
-$id('fqsj').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDay())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
+$id('fqsj').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDate())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 //审批通过时间，1小时19分钟之前
 tds.setHours(date.getHours() - 1)
 tds.setMinutes(tds.getMinutes() - 19)
-$id('spsj').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDay())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
+$id('spsj').innerHTML = `${zero(tds.getMonth()+1)}-${zero(tds.getDate())} ${zero(tds.getHours())}:${zero(tds.getMinutes())}`
 
 //如何销假？
 $id('rhxj').onclick = ()=>{
